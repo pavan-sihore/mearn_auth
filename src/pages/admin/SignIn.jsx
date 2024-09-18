@@ -5,7 +5,7 @@ import { MdLockOutline } from "react-icons/md";
 export default function SignIn() {
   return (
     <>
-    <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center min-h-screen">{/* min-h-screen */}
+    <div className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center min-h-screen bg-gradient-to-r from-indigo-200 from-10% via-sky-200 via-30% to-emerald-100 to-90%">{/* min-h-screen */}
     <div className="bg-white rounded-2xl shadow-2xl flex w-2/3 max-w-4xl">
         {/* Sign-In Link Saction */}
         <div className="w-3/5 p-5">
