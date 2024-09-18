@@ -11,7 +11,9 @@ export default function SignIn() {
         <div className="w-3/5 p-5">
           {/* Company Name Section */}
           <div className="text-left font-bold mb-8">
-            <span className="text-green-500">Company </span> Name
+            <Link to="/">
+             <span className="text-green-500">Company </span> Name
+            </Link>
           </div>
           {/* Form Name Section */}
           <div className="py-2">
