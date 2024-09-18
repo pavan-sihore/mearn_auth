@@ -1,25 +1,35 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-//import { useState } from 'react';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import SignIn from "./pages/signin";
-import SignUp from "./pages/SignUp";
-import Profile from "./pages/Profile";
-import Header from "./components/Header";
+import MainLayout from "./layouts/public/MainLayout";
+import SingleLayout from "./layouts/public/SingleLayout";
+
+import Home from "./pages/public/Home";
+import AboutUs from "./pages/public/AboutUs";
+import Profile from "./pages/public/Profile";
+import SignIn from "./pages/admin/SignIn";
+import SignUp from "./pages/admin/SignUp";
 
 function App() {
 
-  return <BrowserRouter>
-    <Header/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<AboutUs/>}/>
-      <Route path="/sign-in" element={<SignIn/>}/>
-      <Route path="/sign-up" element={<SignUp/>}/>
-      <Route path="/profile" element={<Profile/>}/>
-    </Routes>
-  </BrowserRouter>;
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<MainLayout/>}>
+            <Route index element={<Home/>}/>
+            <Route path="/about" element={<AboutUs/>}/>
+            <Route path="/profile" element={<Profile/>}/>
+        </Route>
+        <Route path="/" element={<SingleLayout/>}>
+          <Route path="/sign-in" element={<SignIn/>}/>
+          <Route path="/sign-up" element={<SignUp/>}/>
+        </Route>
+      </Route>
+    )
+);
+
+  return (
+    <RouterProvider router={router}/>
+  );
 }
 
 export default App
