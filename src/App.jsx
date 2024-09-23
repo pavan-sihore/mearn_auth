@@ -6,8 +6,8 @@ import SingleLayout from "./layouts/public/SingleLayout";
 import Home from "./pages/public/Home";
 import AboutUs from "./pages/public/AboutUs";
 import Profile from "./pages/public/Profile";
-import SignIn from "./pages/admin/SignIn";
-import SignUp from "./pages/admin/SignUp";
+import SignIn from "./pages/admin/login/SignIn";
+import SignUp from "./pages/admin/signup/SignUp";
 
 function App() {
 
