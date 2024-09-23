@@ -54,9 +54,9 @@ export default function SignIn() {
                   <label htmlFor="Username">Username/Email: <span className="text-red-500">*</span></label>
                 </div>
 
-                <div className="bg-gray-100 p-2 flex items-center mb-3 border-2 border-gray-300">
+                <div className="bg-transparent p-2 flex items-center mb-3 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500">
                   <FaRegUser className="text-gray-400 m-1" />
-                  <input type="text" name="username" id="username" autoComplete="off" placeholder="Username/Email" className="bg-gray-100 outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.username} />
+                  <input type="text" name="username" id="username" autoComplete="off" placeholder="Username/Email" className="bg-transparent outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.username} />
                 </div>
                 {errors.username && touched.username ? (<p><span className="text-red-600">{errors.username}</span></p>) : null}
 
@@ -64,9 +64,9 @@ export default function SignIn() {
                   <label htmlFor="usrps">Password: <span className="text-red-500">*</span></label>
                 </div>
 
-                <div className="bg-gray-100 p-2 flex items-center mb-4 border-2 border-gray-300">
+                <div className="bg-transparent p-2 flex items-center mb-3 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500">
                   <MdLockOutline className="text-gray-400 m-1" />
-                  <input type="password" name="usrps" id="usrps" autoComplete="off" placeholder="Password" className="bg-gray-100 outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.usrps} />
+                  <input type="password" name="usrps" id="usrps" autoComplete="off" placeholder="Password" className="bg-transparent outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.usrps} />
                 </div>
                 {errors.usrps && touched.usrps ? (<p><span className="text-red-600">{errors.usrps}</span></p>) : null}
 
@@ -75,8 +75,8 @@ export default function SignIn() {
                   <MdRefresh className="absolute inset-y-0 right-0 w-16 h-9 cursor-pointer" />
                 </div>
 
-                <div className="bg-gray-100 p-2 flex items-center mb-4 border-2 border-gray-300">
-                  <input type="text" name="captcha_code" id="captcha_code" autoComplete="off" placeholder="Captcha" className="bg-gray-100 outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.captcha_code} />
+                <div className="bg-transparent p-2 flex items-center mb-3 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500">
+                  <input type="text" name="captcha_code" id="captcha_code" autoComplete="off" placeholder="Enter captcha code here" className="outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.captcha_code} />
                 </div>
                 {errors.captcha_code && touched.captcha_code ? (<p><span className="text-red-600">{errors.captcha_code}</span></p>) : null}
 
