@@ -58,7 +58,7 @@ export default function SignIn() {
                   <FaRegUser className="text-gray-400 m-1" />
                   <input type="text" name="username" id="username" autoComplete="off" placeholder="Username/Email" className="bg-transparent outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.username} />
                 </div>
-                {errors.username && touched.username ? (<p><span className="text-red-600">{errors.username}</span></p>) : null}
+                {errors.username && touched.username ? (<span className="flex items-start text-xs text-red-600 mb-1">{errors.username}</span>) : null}
 
                 <div className="flex items-start mb-1">
                   <label htmlFor="usrps">Password: <span className="text-red-500">*</span></label>
@@ -68,7 +68,7 @@ export default function SignIn() {
                   <MdLockOutline className="text-gray-400 m-1" />
                   <input type="password" name="usrps" id="usrps" autoComplete="off" placeholder="Password" className="bg-transparent outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.usrps} />
                 </div>
-                {errors.usrps && touched.usrps ? (<p><span className="text-red-600">{errors.usrps}</span></p>) : null}
+                {errors.usrps && touched.usrps ? (<span className="flex items-start text-xs text-red-600 mb-1">{errors.usrps}</span>) : null}
 
                 <div className="bg-gray-100 flex flex-row items-center mb-3 border-2 border-gray-300 relative">
                   <img src="images/sample_captcha.jpg" alt="captcha" className="border-2 border-red-300" width={130} />
@@ -78,7 +78,7 @@ export default function SignIn() {
                 <div className="bg-transparent p-2 flex items-center mb-3 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-green-500">
                   <input type="text" name="captcha_code" id="captcha_code" autoComplete="off" placeholder="Enter captcha code here" className="outline-none text-sm flex-1" onChange={handleChange} onBlur={handleBlur} value={values.captcha_code} />
                 </div>
-                {errors.captcha_code && touched.captcha_code ? (<p><span className="text-red-600">{errors.captcha_code}</span></p>) : null}
+                {errors.captcha_code && touched.captcha_code ? (<span className="flex items-start text-xs text-red-600 mb-1">{errors.captcha_code}</span>) : null}
 
                 <div className="flex justify-between mb-5">
                   <label htmlFor="remember_me" className="flex items-center text-xs hover:text-green-600">
@@ -86,7 +86,7 @@ export default function SignIn() {
                   </label>
                   <a href="#" className="text-xs hover:text-blue-600">Forgot Password</a>
                 </div>
-                {errors.remember_me && touched.remember_me ? (<p><span className="text-red-600">{errors.remember_me}</span></p>) : null}
+                {errors.remember_me && touched.remember_me ? (<span className="flex items-start text-xs text-red-600 mb-1">{errors.remember_me}</span>) : null}
 
                 <button type="submit" className="border-2 border-green-500 text-green-500 rounded-full px-8 py-2 inline-block font-semibold hover:bg-green-500 hover:text-white">Submit</button>
 
