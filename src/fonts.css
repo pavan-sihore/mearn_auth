@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    src: local("Blinker-Thin");
+    url: ("./fonts/blinker/Blinker-Thin.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    src: local("Blinker-Extralight");
+    url: ("./fonts/blinker/Blinker-Extralight.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    src: local("Blinker-Light");
+    url: ("./fonts/blinker/Blinker-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    src: local("Blinker-Regular");
+    url: ("./fonts/blinker/Blinker-Regular.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    src: local("Blinker-Semibold");
+    url: ("./fonts/blinker/Blinker-Semibold.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    src: local("Blinker-Bold");
+    url: ("./fonts/blinker/Blinker-Bold.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    src: local("Blinker-Extrabold");
+    url: ("./fonts/blinker/Blinker-Extrabold.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Blinker", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    src: local("Blinker-Black");
+    url: ("./fonts/blinker/Blinker-Black.ttf") format("truetype");
+}
+  

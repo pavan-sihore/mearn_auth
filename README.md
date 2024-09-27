@@ -1,19 +1,22 @@
 # React + Vite
 
-## Create project
-npm create vite@latest PROJECT_NAME
+```bash
+# clone this repository or click 'use this template' button
+$ git clone https://github.com/RSurya99/nefa.git
 
-## Install node package
-npm install
+# Create project
+$ npm create vite@latest PROJECT_NAME
 
-## Run project
-npm run dev
+# install dependencies
+$ npm install
 
-## Install React router DOM
-npm i react-router-dom
+# serve with hot reload at localhost
+$ npm run dev
 
-## Install react icon
-npm install react-icons --save
+# build for production and launch server
+
+$ npm run build
+```
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
